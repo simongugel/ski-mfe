@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Docker: bauen",
+      "type": "shell",
+      "command": "docker build -t mfe-skifahren:latest .",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: starten (http://localhost:8080)",
+      "type": "shell",
+      "command": "docker rm -f mfe-skifahren 2>/dev/null; docker run -d --name mfe-skifahren -p 8080:80 mfe-skifahren:latest",
+      "dependsOn": "Docker: bauen",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: stoppen",
+      "type": "shell",
+      "command": "docker rm -f mfe-skifahren",
+      "problemMatcher": []
+    }
+  ]
+}

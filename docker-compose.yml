@@ -1,0 +1,8 @@
+services:
+  mfe-skifahren:
+    build: .
+    image: mfe-skifahren:latest
+    container_name: mfe-skifahren
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,6 @@
+.git
+.vscode
+README.md
+docker-compose.yml
+node_modules
+*.zip
