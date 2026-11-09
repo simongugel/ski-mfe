@@ -53,6 +53,32 @@
     return a;
   }
 
+  /* Video: Vorschaubild mit Play-Knopf, der Player wird erst beim Antippen geladen (spart Datenvolumen am Berg). */
+  var YT_ID = /^[\w-]{11}$/;
+  function videoEmbed(title, id) {
+    var fig = el('figure', 'embed');
+    var btn = el('button', 'yt-facade');
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Video abspielen: ' + title);
+    btn.style.backgroundImage = 'url("https://i.ytimg.com/vi/' + id + '/hqdefault.jpg")';
+    btn.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&autoplay=1&playsinline=1';
+      f.title = title;
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      btn.replaceWith(f);
+    });
+    fig.appendChild(btn);
+    fig.appendChild(el('figcaption', null, title));
+    var alt = el('a', 'yt-open', 'Auf YouTube öffnen');
+    alt.href = 'https://www.youtube.com/watch?v=' + id;
+    alt.target = '_blank';
+    alt.rel = 'noopener noreferrer';
+    fig.appendChild(alt);
+    return fig;
+  }
+
   function block(line, tabId, gi, i) {
     var a = line.split('|');
     var t = a[0];
@@ -66,6 +92,7 @@
       n.appendChild(el('div', 'what', a[3]));
       return n;
     }
+    if (t === 'v' && YT_ID.test(a[2] || '')) return videoEmbed(a[1], a[2]);
     if (t === 'v' || t === 'k') {
       var isV = t === 'v';
       n = linkNode(isV ? 'video' : 'button', a[1], a[2]);

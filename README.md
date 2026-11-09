@@ -33,7 +33,8 @@ Wichtig: Für den Offline-Betrieb (Service Worker) und die echte App-Installatio
 ## Inhalte anpassen
 
 - Texte, Programm, Links: `src/content.js` (Zeilenformat steht am Dateianfang).
-- **Links ergänzen:** Videos (`v|Titel|URL`) und Buttons (`k|Text|URL`) haben noch keine Ziel-URL. Solange die URL leer ist, sind sie sichtbar, aber ohne Wirkung.
+- **Videos:** `v|Titel|YouTube-ID` zeigt eine Vorschau. Ein Tipp auf die Vorschau lädt den Player direkt in der Seite; «Auf YouTube öffnen» bleibt als Alternative verfügbar.
+- **Links ergänzen:** Buttons (`k|Text|URL`) benötigen eine Ziel-URL. Solange die URL leer ist, sind sie sichtbar, aber ohne Wirkung.
 - Farben und Grössen: `src/styles.css` (Variablen am Anfang).
 - **Nach jeder Änderung** in `src/sw.js` die Zeile `var CACHE = 'mfe-ski-v1'` hochzählen (`v2`, `v3`, …), sonst bleibt bei den Geräten die alte Version im Cache.
 

@@ -137,6 +137,22 @@ a { color: inherit; }
 .check[aria-pressed="true"] .box { background: var(--indigo); }
 .check[aria-pressed="true"] .box svg { opacity: 1; }
 
+/* Eingebettete Videos */
+.embed { margin: 0; }
+.embed iframe, .yt-facade {
+  display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; background: #000;
+}
+.yt-facade {
+  position: relative; cursor: pointer; padding: 0; background-size: cover; background-position: center;
+}
+.yt-facade::after {
+  content: ""; position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%);
+  width: 68px; height: 48px; border-radius: 12px; background: rgba(216,35,42,.9)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M8 5v14l11-7z'/%3E%3C/svg%3E") center / 28px no-repeat;
+}
+.embed figcaption { font-size: 14px; font-weight: 700; margin-top: 6px; }
+.yt-open { display: inline-block; font-size: 14px; font-weight: 700; color: var(--indigo); padding: 8px 0; }
+
 /* Links */
 .video {
   min-height: 56px; display: flex; align-items: center; gap: 12px;

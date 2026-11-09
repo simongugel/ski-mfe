@@ -1,6 +1,6 @@
 /* Service Worker: legt die App beim ersten Besuch im Cache ab, damit sie auch ohne Netz läuft.
    Bei Änderungen an den Dateien CACHE hochzählen (z. B. v2), dann holen sich alle Geräte die neue Version. */
-var CACHE = 'mfe-ski-v2';
+var CACHE = 'mfe-ski-v4';
 var SHELL = [
   './',
   'index.html',

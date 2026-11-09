@@ -4,7 +4,7 @@
  *   h|Zwischentitel          p|Absatz              b|Fetter Absatz
  *   l|Listenpunkt            q|Zitat / Anweisung   c|Abhak-Aufgabe (Zustand wird auf dem Gerät gespeichert)
  *   r|Zeit|TAG|Text          Programmzeile, TAG = SCHNEE, INDOOR, HOTEL oder leer
- *   v|Videotitel|URL         Video-Link   (URL leer lassen = noch kein Link hinterlegt)
+ *   v|Videotitel|YouTube-ID  Eingebettetes Video (11 Zeichen); sonst Link-URL (leer = noch kein Link hinterlegt)
  *   k|Button-Text|URL        Button-Link  (URL leer lassen = noch kein Link hinterlegt)
  */
 window.CONTENT = {
@@ -147,31 +147,31 @@ window.CONTENT = {
         "l|die Kursdossiers der Karrieremodule in der Praxis anwenden." ] },
       { title: 'Videos – SnowHow Ski', lines: [
         "p|Erscheinungsformen und Good Practice von SnowHow (Swiss Snowsports). Weitere Formen auf tool.jugendundsport.ch.",
-        "v|Erscheinungsformen Ski|",
+        "v|Erscheinungsformen Ski|AtKq_MKRNKk",
         "h|Carveschwung",
-        "v|Bewegungsform Carveschwung|",
-        "v|Good Practice Carveschwung|",
+        "v|Bewegungsform Carveschwung|tVbVPHpavHo",
+        "v|Good Practice Carveschwung|P0EG47ajNTI",
         "h|Kurzschwung",
-        "v|Bewegungsform Kurzschwung|",
-        "v|Bewegungsform Kurzschwung (2)|",
-        "v|Good Practice: Aufbaureihe Kurzschwung|",
-        "v|Good Practice: Trichter – Parallelschwünge zu Kurzschwung|",
+        "v|Bewegungsform Kurzschwung|DnHn6E4HdIw",
+        "v|Bewegungsform Kurzschwung (2)|wXdIfo3dWoE",
+        "v|Good Practice: Aufbaureihe Kurzschwung|ihNf6POZSbE",
+        "v|Good Practice: Trichter – Parallelschwünge zu Kurzschwung|iVsYYd3Lz58",
         "h|Parallelschwung Switch",
         "v|Parallelschwung Switch|",
-        "v|Parallelschwung Switch – gerutscht|",
-        "v|Parallelschwung Switch – geschnitten|",
-        "v|Parallelschwung Switch – Blickrichtungen|",
+        "v|Parallelschwung Switch – gerutscht|ymcrPIevX0o",
+        "v|Parallelschwung Switch – geschnitten|gl0i8jar0MU",
+        "v|Parallelschwung Switch – Blickrichtungen|n24uoy2oLUo",
         "k|Good Practice Parallelschwung Switch: auf LernFlink öffnen|",
         "k|Vermitteln: auf LernFlink öffnen|" ] },
       { title: 'Kompetenznachweis UT 2', lines: [
         "p|Technische Grundsätze Level 2 (Swiss Snowsports) als Orientierung für den weiteren Bildungsweg J+S.",
         "k|LernFlink Swiss Snowsports & Swiss-Ski öffnen|",
-        "v|KNW – Kurzschwung|",
-        "v|KNW – Parallelschwung Switch|",
-        "v|KNW – Sprung|",
-        "v|KNW UT 2 – Video 4|",
-        "v|KNW UT 2 – Video 5|",
-        "v|KNW UT 2 – Video 6|" ] },
+        "v|KNW – Kurzschwung|X8ns9SLvtCQ",
+        "v|KNW – Parallelschwung Switch|SMvNIYMO36c",
+        "v|KNW – Sprung|FomNSKz0mzM",
+        "v|KNW UT 2 – Video 4|z25xeApaus0",
+        "v|KNW UT 2 – Video 5|yyX3p__Wt0g",
+        "v|KNW UT 2 – Video 6|JIqpSdkQOPM" ] },
       { title: 'Transfer', lines: [
         "l|Brief in die Zukunft – Massnahmen für meine Praxis definieren, terminiert auf kurz vor Saisonstart.",
         "l|Idee MFL-PostCard-App – Karte mit Foto des MFL an sich selbst schreiben, mit Massnahmen für die eigene Praxis." ] }
