@@ -3,7 +3,7 @@
  * Zeilenformat (pro Block ein String, Trennzeichen "|"):
  *   h|Zwischentitel          p|Absatz              b|Fetter Absatz
  *   l|Listenpunkt            q|Zitat / Anweisung   c|Abhak-Aufgabe (Zustand wird auf dem Gerät gespeichert)
- *   r|Zeit|TAG|Text          Programmzeile, TAG = SCHNEE, INDOOR, HOTEL oder leer
+ *   r|Zeit|TAG|Text|Auftrag  Programmzeile, TAG = SCHNEE, INDOOR, HOTEL oder leer; Auftrag optional (erscheint darunter)
  *   v|Videotitel|YouTube-ID  Eingebettetes Video (11 Zeichen); sonst Link-URL (leer = noch kein Link hinterlegt)
  *   k|Button-Text|URL        Button-Link  (URL leer lassen = noch kein Link hinterlegt)
  */
@@ -13,14 +13,14 @@ window.CONTENT = {
     "r|12.00–13.30||Mittagessen · Austausch zum Vorbereitungsauftrag",
     "r|13.30|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport",
     "r|15.30||Reflexion und Transfer · Umsetzung im MFL",
-    "r|17.00–18.00|INDOOR|Theorie",
-    "r|18.00|INDOOR|Austausch · offene Fragen klären",
-    "r|19.00|HOTEL|Nachtessen"
+    "r|17.00–18.30|INDOOR|Theorie · Leiterkurse / MFL gruppenübergreifend austauschen · Vorbereitungszeit Smart Competition",
+    "r|18.30|HOTEL|Nachtessen",
+    "r|ca. 19.45|INDOOR|Impuls von Tobi im Theoriesaal: «Gedanken aus 20 Jahren Schneesport»"
   ],
   prog2: [
     "r|09.00|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport · Kompetenznachweis Praxis LK",
     "r|12.00–13.30||Mittagessen und Austausch",
-    "r|13.30|SCHNEE|Praxis · Unterrichten und Technik 1 – Blended Learning",
+    "r|13.30|SCHNEE|Praxis · Unterrichten und Technik 1 – Blended Learning mit Smart Competition|Smart Competition durchführen",
     "r|15.00||Reflexion und Transfer · Transfer in die Praxis · Module Kanton",
     "r|15.30||Modulschluss · Evaluation"
   ],

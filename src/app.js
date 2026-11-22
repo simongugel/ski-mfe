@@ -90,6 +90,12 @@
       if (a[2]) when.appendChild(el('span', 'chip ' + a[2], a[2]));
       n.appendChild(when);
       n.appendChild(el('div', 'what', a[3]));
+      if (a[4]) {
+        var task = el('div', 'task');
+        task.appendChild(el('strong', null, 'Auftrag: '));
+        task.appendChild(document.createTextNode(a[4]));
+        n.appendChild(task);
+      }
       return n;
     }
     if (t === 'v' && YT_ID.test(a[2] || '')) return videoEmbed(a[1], a[2]);
