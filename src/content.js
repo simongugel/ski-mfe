@@ -21,7 +21,7 @@ window.CONTENT = {
   ],
   prog2: [
     "r|ab 07.00|HOTEL|Frühstück",
-    "r|08.27||Bus",
+    "r|08.27||Bus ab Davos Seebüel",
     "r|09.00|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport · Kompetenznachweis Praxis LK",
     "r|12.00–13.30||Mittagessen und Austausch",
     "r|13.30|SCHNEE|Praxis · Unterrichten und Technik 1 – Blended Learning mit Smart Competition|Smart Competition durchführen",
