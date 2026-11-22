@@ -9,6 +9,8 @@
  */
 window.CONTENT = {
   prog1: [
+    "r|07.00|HOTEL|Frühstück",
+    "r|08.57||Bus ab Davos Seebüel",
     "r|09.00–12.00|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport",
     "r|12.00–13.30||Mittagessen · Austausch zum Vorbereitungsauftrag",
     "r|13.30|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport",
@@ -18,11 +20,14 @@ window.CONTENT = {
     "r|ca. 19.45|INDOOR|Impuls von Tobi im Theoriesaal: «Gedanken aus 20 Jahren Schneesport»"
   ],
   prog2: [
+    "r|ab 07.00|HOTEL|Frühstück",
+    "r|08.27||Bus",
     "r|09.00|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport · Kompetenznachweis Praxis LK",
     "r|12.00–13.30||Mittagessen und Austausch",
     "r|13.30|SCHNEE|Praxis · Unterrichten und Technik 1 – Blended Learning mit Smart Competition|Smart Competition durchführen",
-    "r|15.00||Reflexion und Transfer · Transfer in die Praxis · Module Kanton",
-    "r|15.30||Modulschluss · Evaluation"
+    "r|15.00||Reflexion und Transfer · Modulschluss · Transfer in die Praxis · Module Kanton · Evaluation",
+    "r|16.00–16.30||Kursschluss am Bahnhof · Anhänger steht am Bahnhof",
+    "r|16.37||Zug Richtung Landquart"
   ],
   fokus: {
     aw: { title: 'Aussen weit', sub: 'external-weit', d: 'Umgebung als Ganzes wahrnehmen: Strecke, Gelände, Sicht, Schnee, andere Athlet:innen, Kurs oder Anlage im Überblick.', e: 'Besichtigung von Kurs, Loipe oder Park, Einschätzen der Bedingungen, Taktik im Feld (z. B. Massenstart), freie Fahrt auf belebter Piste, Sicherheit.' },
