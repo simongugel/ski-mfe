@@ -26,6 +26,9 @@ Danach läuft die Seite auf <http://localhost:8080>.
 - **iPhone (Safari):** Teilen-Symbol → *Zum Home-Bildschirm*. Das J+S-Icon (`apple-touch-icon`) wird verwendet.
 - **Android (Chrome):** Menü ⋮ → *App installieren* bzw. *Zum Startbildschirm hinzufügen*.
 
+Im Browser kann sich die Adressleiste beim Scrollen verkleinern; ihr Verhalten wird vom Browser gesteuert.
+Auf dem iPhone wird die gespeicherte App unterhalb der Statusleiste dargestellt, damit der Inhalt nicht in deren Bereich hineinragt.
+
 Wichtig: Für den Offline-Betrieb (Service Worker) und die echte App-Installation verlangen die Browser **HTTPS**
 (nur `localhost` ist ausgenommen). Für die Teilnehmenden den Container hinter einen Reverse Proxy mit Zertifikat
 (z. B. Traefik, Caddy oder den vorhandenen Webserver) stellen. Ohne HTTPS funktioniert das Ablegen als Lesezeichen mit Icon auf dem iPhone trotzdem, aber nicht der Offline-Modus.

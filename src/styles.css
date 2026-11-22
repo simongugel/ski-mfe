@@ -12,7 +12,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; }
+html, body { margin: 0; }
 body {
   background: var(--white);
   color: var(--ink);
@@ -25,18 +25,21 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid #F59E0B; outline-offset: 2px; }
 
 .app {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   max-width: 560px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   background: var(--white);
-  overflow: hidden;
 }
 
 /* Header */
 .top {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--white);
   flex: none;
   min-height: 64px;
   padding: calc(10px + env(safe-area-inset-top)) 16px 10px 16px;
@@ -55,7 +58,7 @@ a { color: inherit; }
 
 /* Content */
 #view {
-  flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
+  flex: 1; min-height: 0;
   padding: 16px; display: flex; flex-direction: column; gap: 14px;
   outline: none;
 }
@@ -174,6 +177,7 @@ a { color: inherit; }
 
 /* Tab bar */
 .tabbar {
+  position: sticky; bottom: 0; z-index: 2;
   flex: none; padding: 8px 8px calc(12px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--line); background: var(--white);
   display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px;
@@ -185,7 +189,3 @@ a { color: inherit; }
 }
 .tabbar button[aria-current="page"] { background: var(--indigo); color: var(--white); }
 .tabbar svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-
-@media (prefers-reduced-motion: no-preference) {
-  #view { scroll-behavior: auto; }
-}

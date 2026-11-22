@@ -175,7 +175,7 @@
 
   function render(keepScroll) {
     var tab = C.tabs.filter(function (t) { return t.id === current; })[0] || C.tabs[0];
-    var top = keepScroll ? view.scrollTop : 0;
+    var top = keepScroll ? window.scrollY : 0;
     view.textContent = '';
     tab.groups.forEach(function (g, gi) {
       var card = el('section', 'card' + (g.hl ? ' hl' : ''));
@@ -192,7 +192,7 @@
       if (b.getAttribute('data-tab') === tab.id) b.setAttribute('aria-current', 'page');
       else b.removeAttribute('aria-current');
     });
-    view.scrollTop = top;
+    window.scrollTo(0, top);
   }
 
   function go(id) {
