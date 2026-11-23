@@ -27,6 +27,7 @@ Danach läuft die Seite auf <http://localhost:8080>.
 - **Android (Chrome):** Menü ⋮ → *App installieren* bzw. *Zum Startbildschirm hinzufügen*.
 
 Im Browser kann sich die Adressleiste beim Scrollen verkleinern; ihr Verhalten wird vom Browser gesteuert.
+Wegen eines Fehlers in Safari (iOS 26) kann das untere Menü im Browser dabei gelegentlich verrutschen. In der auf dem Home-Bildschirm gespeicherten App scrollt nur der Inhalt, das Menü bleibt dort immer fest unten.
 Auf dem iPhone wird die gespeicherte App unterhalb der Statusleiste dargestellt, damit der Inhalt nicht in deren Bereich hineinragt.
 
 Wichtig: Für den Offline-Betrieb (Service Worker) und die echte App-Installation verlangen die Browser **HTTPS**

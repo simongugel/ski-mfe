@@ -21,6 +21,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 button { font: inherit; color: inherit; cursor: pointer; }
+button, a { touch-action: manipulation; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid #F59E0B; outline-offset: 2px; }
 
@@ -33,6 +34,12 @@ a { color: inherit; }
   flex-direction: column;
   background: var(--white);
 }
+
+/* Gespeicherte App (Home-Bildschirm): nur der Inhalt scrollt, Kopf und Menü bleiben fest.
+   Im Browser scrollt die ganze Seite, damit sich die Adressleiste verkleinern kann. */
+.standalone .app { height: 100vh; height: 100dvh; overflow: hidden; }
+.standalone #view { overflow-y: auto; overscroll-behavior: contain; }
+.standalone .top, .standalone .tabbar { position: static; }
 
 /* Header */
 .top {
