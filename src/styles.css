@@ -201,7 +201,8 @@ a { color: inherit; }
   position: sticky; bottom: 0; z-index: 2;
   flex: none; padding: 8px 8px calc(12px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--line); background: var(--white);
-  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px;
+  /* Erste Spalte breiter, damit «Vorbereitung» Platz hat. */
+  display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(4, minmax(0, 1fr)); gap: 4px;
 }
 .tabbar button {
   min-height: 64px; border: 0; border-radius: 10px; background: transparent; color: var(--ink-soft);
@@ -210,3 +211,4 @@ a { color: inherit; }
 }
 .tabbar button[aria-current="page"] { background: var(--indigo); color: var(--white); }
 .tabbar svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.tabbar span { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

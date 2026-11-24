@@ -29,7 +29,7 @@ window.CONTENT = {
     ie: { title: 'Innen eng', sub: 'internal-eng', m: 'Der Busfahrer konzentriert sich auf die Hintertür – auf Ein- oder Aussteigende.', d: 'Ein einziges inneres Signal: der Druck unter dem Fuss, ein Atemzug, ein Schlüsselwort.', e: 'Vorstartroutine, Reset nach einem Fehler, Atmung vor dem Schuss, Fokus auf ein Bewegungsmerkmal in einer Technikübung.' }
   },
   tabs: [
-    { id: 'ablauf', title: 'Ablauf', groups: [
+    { id: 'ablauf', title: 'Vorbereitung', groups: [
       { title: 'Vorbereitungsauftrag', lines: [
         "c|J+S Lernbaustein «Konzentrieren» durcharbeiten, inkl. 2 Fragen zur Praxis (ca. 45')",
         "k|Lernbaustein «Konzentrieren» öffnen|https://tool.jugendundsport.ch/modules/6541195ff9d5cc1a1a0cb7d2?lang=de",
@@ -37,8 +37,7 @@ window.CONTENT = {
         "n|Beispiel 1",
         "n|Beispiel 2",
         "c|Schneesport-News 26/27 lesen",
-        "k|Schneesport-News 26/27 öffnen|https://tool.jugendundsport.ch/modules/6a96ec7cb6267c1c550aa6f3?preview" ] },
-      { title: 'Programm', seg: true, lines: [] }
+        "k|Schneesport-News 26/27 öffnen|https://tool.jugendundsport.ch/modules/6a96ec7cb6267c1c550aa6f3?preview" ] }
     ] },
 
     { id: 'tag1', title: 'Tag 1 – Verstehen und erleben', groups: [
