@@ -131,21 +131,6 @@ window.CONTENT = {
     ] },
 
     { id: 'material', title: 'Material', groups: [
-      { title: 'Modullernziele MFE KT', lines: [
-        "p|Verbindliche Modullernziele",
-        "h|Sich als J+S-Expert:in engagieren",
-        "p|Die J+S-Expertinnen und -Experten …",
-        "l|verstehen und identifizieren sich mit dem MFL-Programm und kreieren Umsetzungsmöglichkeiten.",
-        "l|verstehen das Thema «Entwicklungsfaktor Psyche – Konzentrieren» und können dieses J+S-Leiter:innen vermitteln.",
-        "l|entwickeln Möglichkeiten, die Transferwirksamkeit in der eigenen Praxis zu verstärken.",
-        "h|Sportart verstehen",
-        "p|Die J+S-Expertinnen und -Experten …",
-        "l|erleben den Entwicklungsfaktor Psyche – Konzentration und verstehen die Anwendung in der Praxis.",
-        "h|Sportart unterrichten",
-        "p|Die J+S-Expert:innen können …",
-        "l|dem jeweiligen Modul angepasste Trainingsformen aussuchen und das MF-Thema für die Leiter:innen verständlich aufbereiten.",
-        "l|die Lehrunterlagen modulbezogen einsetzen.",
-        "l|die Kursdossiers der Karrieremodule in der Praxis anwenden." ] },
       { title: 'Videos – SnowHow Ski', lines: [
         "p|Erscheinungsformen und Good Practice von SnowHow (Swiss Snowsports). Weitere Formen auf tool.jugendundsport.ch.",
         "v|Erscheinungsformen Ski|AtKq_MKRNKk",
