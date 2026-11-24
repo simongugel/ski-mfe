@@ -1,4 +1,4 @@
-/* Inhalte der Seite «MFE Skifahren – Konzentration im Schneesport».
+/* Inhalte der Seite «Ausbildung Ski – Konzentration im Schneesport».
  *
  * Zeilenformat (pro Block ein String, Trennzeichen "|"):
  *   h|Zwischentitel          p|Absatz              b|Fetter Absatz

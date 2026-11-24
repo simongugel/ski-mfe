@@ -1,7 +1,7 @@
 {
-  "name": "MFE Skifahren – Konzentration im Schneesport",
-  "short_name": "MFE Ski",
-  "description": "Ablauf, Inhalte und Material zum MFE Skifahren – Konzentration im Schneesport.",
+  "name": "Ausbildung Ski – Konzentration im Schneesport",
+  "short_name": "Ausbildung Ski",
+  "description": "Ablauf, Inhalte und Material zur Ausbildung Ski – Konzentration im Schneesport.",
   "lang": "de-CH",
   "start_url": "./",
   "scope": "./",

@@ -1,4 +1,4 @@
-# MFE Skifahren – Konzentration im Schneesport
+# Ausbildung Ski – Konzentration im Schneesport
 
 Mobile Web-App (PWA) für Teilnehmende auf dem Schnee. Statische Seite, ausgeliefert mit nginx in einem Docker-Container.
 Gestaltung nach LernFlink (Swiss Snowsports), Variante «B – Tagesnavigation» mit J+S-Logo im Header.

@@ -221,7 +221,7 @@
       view.appendChild(card);
     });
     titleEl.textContent = tab.title;
-    document.title = tab.title + ' · MFE Skifahren';
+    document.title = tab.title + ' · Ausbildung Ski';
     tabButtons.forEach(function (b) {
       if (b.getAttribute('data-tab') === tab.id) b.setAttribute('aria-current', 'page');
       else b.removeAttribute('aria-current');
