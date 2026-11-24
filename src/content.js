@@ -110,7 +110,7 @@ window.CONTENT = {
         "k|Snow Safety öffnen|https://snowsafety.ch/de",
         "l|Bewegungsform: Keypoints, Good Practice (SnowHow einbinden).",
         "l|Aufmerksamkeitslenkung als Routine verankern: 16-Sekunden-Kur.",
-        "k|SRF Sportlounge – Die 16-Sekunden-Kur · auf SRF öffnen|",
+        "k|SRF Sportlounge – Die 16-Sekunden-Kur · auf SRF öffnen|https://www.srf.ch/play/tv/sportlounge/video/die-16-sekunden-kur?urn=urn:srf:video:c31bb365-8cfa-4cb9-8d4b-e3c7e0a3f650",
         "l|Achtsamkeitsübungen (beliebig einsetzbar)" ] },
       { title: 'Ablauf', lines: [
         "l|Aufwärmen + Einfahren",
