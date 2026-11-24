@@ -8,12 +8,13 @@
   var tabButtons = Array.prototype.slice.call(document.querySelectorAll('.tabbar button'));
 
   /* ---------- Zustand (Tag, Fokus, abgehakte Aufgaben) – bleibt auf dem Gerät ---------- */
-  var state = { day: 1, focus: 'aw', done: {} };
+  var state = { day: 1, focus: 'aw', done: {}, notes: {} };
   try {
     var saved = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
     if (saved.day === 1 || saved.day === 2) state.day = saved.day;
     if (saved.focus && C.fokus[saved.focus]) state.focus = saved.focus;
     if (saved.done && typeof saved.done === 'object') state.done = saved.done;
+    if (saved.notes && typeof saved.notes === 'object') state.notes = saved.notes;
   } catch (e) { /* Speicher nicht verfügbar – App läuft trotzdem */ }
   function save() {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignorieren */ }
@@ -136,6 +137,21 @@
       });
       return n;
     }
+    if (t === 'n') {
+      var noteKey = tabId + '-' + gi + '-' + i;
+      var wrap = el('label', 'note');
+      wrap.appendChild(el('span', null, text));
+      var ta = el('textarea');
+      ta.rows = 3;
+      ta.placeholder = 'Hier notieren …';
+      ta.value = state.notes[noteKey] || '';
+      ta.addEventListener('input', function () {
+        state.notes[noteKey] = ta.value;
+        save();
+      });
+      wrap.appendChild(ta);
+      return wrap;
+    }
     return el('div', null, text);
   }
 
@@ -169,6 +185,12 @@
     d.setAttribute('aria-live', 'polite');
     d.appendChild(el('div', 't', sel.title));
     d.appendChild(el('p', null, sel.d));
+    if (sel.m) {
+      var m = el('div', 'm');
+      m.appendChild(el('strong', null, 'Bild: '));
+      m.appendChild(document.createTextNode(sel.m));
+      d.appendChild(m);
+    }
     var e = el('div', 'e');
     e.appendChild(el('strong', null, 'Im Schneesport: '));
     e.appendChild(document.createTextNode(sel.e));
@@ -189,7 +211,13 @@
       if (g.seg) card.appendChild(segment());
       var lines = g.seg ? (state.day === 1 ? C.prog1 : C.prog2) : g.lines;
       if (g.matrix) matrix(card);
-      lines.forEach(function (line, i) { card.appendChild(block(line, tab.id, gi, i)); });
+      // Index pro Zeilentyp: neue Links/Notizfelder verschieben gespeicherte Häkchen nicht.
+      var seen = {};
+      lines.forEach(function (line) {
+        var t = line.split('|')[0];
+        seen[t] = seen[t] === undefined ? 0 : seen[t] + 1;
+        card.appendChild(block(line, tab.id, gi, seen[t]));
+      });
       view.appendChild(card);
     });
     titleEl.textContent = tab.title;

@@ -6,41 +6,38 @@
  *   r|Zeit|TAG|Text|Auftrag  Programmzeile, TAG = SCHNEE, INDOOR, HOTEL oder leer; Auftrag optional (erscheint darunter)
  *   v|Videotitel|YouTube-ID  Eingebettetes Video (11 Zeichen); sonst Link-URL (leer = noch kein Link hinterlegt)
  *   k|Button-Text|URL        Button-Link  (URL leer lassen = noch kein Link hinterlegt)
+ *   n|Bezeichnung            Notizfeld (Text wird nur auf dem Gerät gespeichert)
  */
 window.CONTENT = {
   prog1: [
-    "r|07.00|HOTEL|Frühstück",
-    "r|08.57||Bus ab Davos Seebüel",
     "r|09.00–12.00|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport",
-    "r|12.00–13.30||Mittagessen · Austausch zum Vorbereitungsauftrag",
+    "r|12.00–13.30||Austausch zum Vorbereitungsauftrag",
     "r|13.30|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport",
     "r|15.30||Reflexion und Transfer · Umsetzung im MFL",
-    "r|17.00–18.30|INDOOR|Theorie · Leiterkurse / MFL gruppenübergreifend austauschen · Vorbereitungszeit Smart Competition",
-    "r|18.30|HOTEL|Nachtessen",
-    "r|ca. 19.45|INDOOR|Impuls von Tobi im Theoriesaal: «Gedanken aus 20 Jahren Schneesport»"
+    "r|17.00–18.30|INDOOR|Theorie · Leiterkurse / MFL gruppenübergreifend austauschen · Vorbereitungszeit Smart Competition"
   ],
   prog2: [
-    "r|ab 07.00|HOTEL|Frühstück",
-    "r|08.27||Bus ab Davos Seebüel",
     "r|09.00|SCHNEE|Praxis – MF-Thema Konzentrieren im Schneesport · Kompetenznachweis Praxis LK",
-    "r|12.00–13.30||Mittagessen und Austausch",
     "r|13.30|SCHNEE|Praxis · Unterrichten und Technik 1 – Blended Learning mit Smart Competition|Smart Competition durchführen",
     "r|15.00||Reflexion und Transfer · Modulschluss · Transfer in die Praxis · Module Kanton · Evaluation",
-    "r|16.00–16.30||Kursschluss am Bahnhof · Anhänger steht am Bahnhof",
-    "r|16.37||Zug Richtung Landquart"
+    "r|16.00–16.30||Kursschluss am Bahnhof · Anhänger steht am Bahnhof"
   ],
   fokus: {
-    aw: { title: 'Aussen weit', sub: 'external-weit', d: 'Umgebung als Ganzes wahrnehmen: Strecke, Gelände, Sicht, Schnee, andere Athlet:innen, Kurs oder Anlage im Überblick.', e: 'Besichtigung von Kurs, Loipe oder Park, Einschätzen der Bedingungen, Taktik im Feld (z. B. Massenstart), freie Fahrt auf belebter Piste, Sicherheit.' },
-    ae: { title: 'Aussen eng', sub: 'external-eng', d: 'Aufmerksamkeit auf ein einzelnes äusseres Detail: das nächste Obstacle (Tor, Kicker, Rail, Scheibe), ein Punkt in der Linie, die Schneeoberfläche vor dem Gerät.', e: 'Blicksteuerung im Lauf, Ansatzpunkt eines Schwungs, Absprungkante, Landezone, Zielscheibe beim Schiessen.' },
-    iw: { title: 'Innen weit', sub: 'internal-weit', d: 'Mehrere innere Signale gleichzeitig: Körpergefühl, Anspannung, Ermüdung, Emotionen, Gedanken; Analysieren und Planen.', e: 'Analyse nach Lauf, Run oder Rennen, Einschätzen von Aktivierung und Belastung, Erarbeiten von Renntaktik oder Run-Aufbau.' },
-    ie: { title: 'Innen eng', sub: 'internal-eng', d: 'Ein einziges inneres Signal: der Druck unter dem Fuss, ein Atemzug, ein Schlüsselwort.', e: 'Vorstartroutine, Reset nach einem Fehler, Atmung vor dem Schuss, Fokus auf ein Bewegungsmerkmal in einer Technikübung.' }
+    aw: { title: 'Aussen weit', sub: 'external-weit', m: 'Der Mäusebussard sucht Mäuse.', d: 'Umgebung als Ganzes wahrnehmen: Strecke, Gelände, Sicht, Schnee, andere Athlet:innen, Kurs oder Anlage im Überblick.', e: 'Besichtigung von Kurs, Loipe oder Park, Einschätzen der Bedingungen, Taktik im Feld (z. B. Massenstart), freie Fahrt auf belebter Piste, Sicherheit.' },
+    ae: { title: 'Aussen eng', sub: 'external-eng', m: 'Der Mäusebussard fokussiert eine Maus und stürzt sich darauf.', d: 'Aufmerksamkeit auf ein einzelnes äusseres Detail: das nächste Obstacle (Tor, Kicker, Rail, Scheibe), ein Punkt in der Linie, die Schneeoberfläche vor dem Gerät.', e: 'Blicksteuerung im Lauf, Ansatzpunkt eines Schwungs, Absprungkante, Landezone, Zielscheibe beim Schiessen.' },
+    iw: { title: 'Innen weit', sub: 'internal-weit', m: 'Der Busfahrer sitzt entspannt auf seinem Stuhl und hat den Verkehr im Blick.', d: 'Mehrere innere Signale gleichzeitig: Körpergefühl, Anspannung, Ermüdung, Emotionen, Gedanken; Analysieren und Planen.', e: 'Analyse nach Lauf, Run oder Rennen, Einschätzen von Aktivierung und Belastung, Erarbeiten von Renntaktik oder Run-Aufbau.' },
+    ie: { title: 'Innen eng', sub: 'internal-eng', m: 'Der Busfahrer konzentriert sich auf die Hintertür – auf Ein- oder Aussteigende.', d: 'Ein einziges inneres Signal: der Druck unter dem Fuss, ein Atemzug, ein Schlüsselwort.', e: 'Vorstartroutine, Reset nach einem Fehler, Atmung vor dem Schuss, Fokus auf ein Bewegungsmerkmal in einer Technikübung.' }
   },
   tabs: [
     { id: 'ablauf', title: 'Ablauf', groups: [
       { title: 'Vorbereitungsauftrag', lines: [
         "c|J+S Lernbaustein «Konzentrieren» durcharbeiten, inkl. 2 Fragen zur Praxis (ca. 45')",
+        "k|Lernbaustein «Konzentrieren» öffnen|https://tool.jugendundsport.ch/modules/6541195ff9d5cc1a1a0cb7d2?lang=de",
         "c|Notiere dir 2 Beispiele, wie du deine Teilnehmenden in ihrer Konzentration unterstützt",
-        "c|Schneesport-News 26/27 lesen" ] },
+        "n|Beispiel 1",
+        "n|Beispiel 2",
+        "c|Schneesport-News 26/27 lesen",
+        "k|Schneesport-News 26/27 öffnen|https://tool.jugendundsport.ch/modules/6a96ec7cb6267c1c550aa6f3?preview" ] },
       { title: 'Programm', seg: true, lines: [] }
     ] },
 
@@ -161,6 +158,9 @@ window.CONTENT = {
         "v|Bewegungsform Kurzschwung (2)|wXdIfo3dWoE",
         "v|Good Practice: Aufbaureihe Kurzschwung|ihNf6POZSbE",
         "v|Good Practice: Trichter – Parallelschwünge zu Kurzschwung|iVsYYd3Lz58",
+        "h|Parallelschwung gerutscht / geschnitten",
+        "v|Demo Parallelschwung gerutscht|yyX3p__Wt0g",
+        "k|Mehr auf LernFlink (Swiss Snowsports)|https://snowsports.flink.host/s/6a05VkOw/kNSyX5Ex/",
         "h|Parallelschwung Switch",
         "v|Parallelschwung Switch|",
         "v|Parallelschwung Switch – gerutscht|ymcrPIevX0o",
@@ -170,7 +170,7 @@ window.CONTENT = {
         "k|Vermitteln: auf LernFlink öffnen|" ] },
       { title: 'Kompetenznachweis UT 2', lines: [
         "p|Technische Grundsätze Level 2 (Swiss Snowsports) als Orientierung für den weiteren Bildungsweg J+S.",
-        "k|LernFlink Swiss Snowsports & Swiss-Ski öffnen|",
+        "k|LernFlink Swiss Snowsports & Swiss-Ski öffnen|https://snowsports.flink.host/s/6a05VkOw/kNSyX5Ex/",
         "v|KNW – Kurzschwung|X8ns9SLvtCQ",
         "v|KNW – Parallelschwung Switch|SMvNIYMO36c",
         "v|KNW – Sprung|FomNSKz0mzM",

@@ -57,4 +57,4 @@ src/                    index.html, styles.css, app.js, content.js, manifest.web
 ## Hinweise
 
 - Die Schrift Figtree wird von Google Fonts geladen und danach vom Service Worker gecacht. Als Ersatz dient die Systemschrift. Für den vollständig datenschutzkonformen Betrieb die Schrift lokal ablegen (`src/fonts/`) und in `index.html` einbinden.
-- Abgehakte Aufgaben, gewählter Tag und gewählter Fokus werden nur lokal auf dem Gerät gespeichert (kein Server, kein Tracking).
+- Abgehakte Aufgaben, Notizen (Beispiele im Vorbereitungsauftrag), gewählter Tag und gewählter Fokus werden nur lokal auf dem Gerät gespeichert (kein Server, kein Tracking).
