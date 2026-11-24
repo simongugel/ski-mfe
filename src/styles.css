@@ -36,8 +36,11 @@ a { color: inherit; }
 }
 
 /* Gespeicherte App (Home-Bildschirm): nur der Inhalt scrollt, Kopf und Menü bleiben fest.
+   Der Body ist am Bildschirm fixiert, damit iOS 26 oben keinen Unschärfe-Effekt über die Statusleiste legt.
    Im Browser scrollt die ganze Seite, damit sich die Adressleiste verkleinern kann. */
-.standalone .app { height: 100vh; height: 100dvh; overflow: hidden; }
+html.standalone { overflow: hidden; }
+.standalone body { position: fixed; inset: 0; overflow-y: auto; }
+.standalone .app { height: 100%; overflow: hidden; }
 .standalone #view { overflow-y: auto; overscroll-behavior: contain; }
 .standalone .top, .standalone .tabbar { position: static; }
 
